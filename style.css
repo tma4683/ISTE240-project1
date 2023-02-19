@@ -1,5 +1,5 @@
 header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -9,9 +9,8 @@ header {
 	padding: 20px;
 }
 
-
 nav {
-	background-color: #f8f9fa;
+	background-color: pink;
 	padding: 10px;
 }
 
@@ -28,4 +27,38 @@ footer {
 	color: #fff;
 	padding: 20px;
 }
+
+@media (max-width: 767px) {
+    nav .navbar-nav {
+      display: none;
+    }
+    nav .navbar-nav.show {
+      display: block;
+    }
+  }
+  
+  nav .navbar-toggler {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+  }
+  
+  nav .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  nav .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav .navbar-nav li {
+    margin-bottom: 1rem;
+  }
+  
+  nav .navbar-nav li:last-child {
+    margin-bottom: 0;
+  }
+  
 
